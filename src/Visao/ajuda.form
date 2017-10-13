@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="MENU AJUDA"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="477" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="610" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Logar:&#xa;{Tela de login}&#xa;o usuario deve por o usuario e a senha nos &#xa;campos indicados e clckar no bot&#xe3;o entrar&#xa;&#xa;Criar Responsavel financeiro:&#xa;{tela inicial do programa}&#xa;para realizar um cadastro clique em cadastros&#xa;{tela com cadastros clickado}&#xa;Clique em cadastrar novo responsavel financeiro&#xa;{Tela mostrando a op&#xe7;&#xe3;o de escolher o tipo do responsavel juridico ou fisico}&#xa;clique em sim para empresas e n&#xe3;o para pessoas fisicas&#xa;{tela com o formulario}&#xa;Agora basta preencher o formulario e clicar em salvar&#xa;&#xa;Criar Paciente:&#xa;{tela inicial do programa}&#xa;para realizar um cadastro clique em cadastros&#xa;{tela com cadastros clickado}&#xa;Clique em cadastrar novo Paciente&#xa;{tela do formulario de cadastro de paciente}&#xa;Clique em escolha para selecionar o responsavel financeiro&#xa;{Tela pedindo ID do responsavel financeiro}&#xa;Introduza o ID do responsavel financeiro e clique no bot&#xe3;o ok&#xa;{Tela com o formulario desbloqueado e o respFin escolhido}&#xa;Preencha o formulario e clique em salvar&#xa;&#xa;Ativa\u005cReativar cadastro:&#xa;{tela inicial do programa}&#xa;para realizar uma reativa&#xe7;&#xe3;o\u005creativa&#xe7;&#xe3;o clique em cadastros&#xa;{Tela com cadastros clicado}&#xa;Agora clique em Ativar\u005cInativar Cadastros&#xa;{Tela que pede o ID}&#xa;Digite o ID e clique em OK&#xa;&#xa;SAIR:&#xa;clique em siste e logo ap&#xf3;s sair&#xa;&#xa;como achar a Ajuda:&#xa;Como diabos voc&#xea; chegou aquie hein?&#xa;&#xa;{tela com cadastros clickado}" containsInvalidXMLChars="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
