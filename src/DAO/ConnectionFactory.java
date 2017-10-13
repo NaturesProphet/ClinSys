@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  */
 public class ConnectionFactory {
 
-    private String host = "db4free.net";
+    private String host = "SEUSERVERAQUI";
     private int port = 3307;
-    private String user = "mgarcia";
-    private String password = "123456";
+    private String user = "SEUUSERAQUI";
+    private String password = "SUASENHAAQUI";
     private String db = "clinsys";
     private String url = "jdbc:mysql://" + host + ":" + port + "/" + db;
 
