@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  */
 public class ConnectionFactory {
 
-    private String host = "SEUSERVERAQUI";
-    private int port = 3307;
-    private String user = "SEUUSERAQUI";
-    private String password = "SUASENHAAQUI";
+    private String host = "SEU HOST";
+    private int port = 3306; //SUA PORTA
+    private String user = "SEU USUARIO";
+    private String password = "SUA SENHA";
     private String db = "clinsys";
     private String url = "jdbc:mysql://" + host + ":" + port + "/" + db;
 

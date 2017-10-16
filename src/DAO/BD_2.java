@@ -533,46 +533,45 @@ public class BD_2 {
         }
         return null;
     }
-    
+
     //CAPTURA RESPFINJURIDICO PELO CNPJ
     public static Pessoa getpj(String cnpj) {
         Connection con = new ConnectionFactory().getConnection();
-        String sql = "SELECT id FROM RespFinJuridico WHERE cnpj = '"+cnpj+"'";
+        String sql = "SELECT id FROM RespFinJuridico WHERE cnpj = '" + cnpj + "'";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return getRespFin(rs.getInt(1));
             } else {
-                JOptionPane.showMessageDialog(null,"Nenhum registro encontrado");
-            }   
-        }catch(Exception e) {
-            System.out.println("Erro ao buscar respfin.: "+e);
-            JOptionPane.showMessageDialog(null,"Erro ao buscar respfin\n"+e);
+                JOptionPane.showMessageDialog(null, "Nenhum registro encontrado");
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao buscar respfin.: " + e);
+            JOptionPane.showMessageDialog(null, "Erro ao buscar respfin\n" + e);
         }
         return null;
     }
-    
+
     //CAPTURA RESPFINFISICO PELO CPF
     public static Pessoa getrf(String cpf) {
         Connection con = new ConnectionFactory().getConnection();
-        String sql = "SELECT id FROM PessoaFisica WHERE cpf = '"+cpf+"'";
+        String sql = "SELECT id FROM PessoaFisica WHERE cpf = '" + cpf + "'";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return getRespFin(rs.getInt(1));
             } else {
-                JOptionPane.showMessageDialog(null,"Nenhum registro encontrado");
-            }   
-        }catch(Exception e) {
-            System.out.println("Erro ao buscar respfin.: "+e);
-            JOptionPane.showMessageDialog(null,"Erro ao buscar respfin\n"+e);
+                JOptionPane.showMessageDialog(null, "Nenhum registro encontrado");
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao buscar respfin.: " + e);
+            JOptionPane.showMessageDialog(null, "Erro ao buscar respfin\n" + e);
         }
         return null;
     }
-    
-    
+
     //CAPTURA USUARIO
     public static Usuario getUsuario(String login) {
         Connection con = new ConnectionFactory().getConnection();
@@ -722,14 +721,16 @@ public class BD_2 {
     //CAPTURA UMA respfin PELO NOME
     public static Pessoa getrespfin(String nome) {
         Connection con = new ConnectionFactory().getConnection();
-        String sql = "SELECT id FROM Pessoa WHERE nome LIKE '%" + nome + "%'";
+        String sql = "SELECT id FROM Pessoa WHERE nome = '" + nome + "'";
         try {
             try (PreparedStatement ps = con.prepareStatement(sql)) {
                 ResultSet rs = ps.executeQuery();
-                ps.close();
-                con.close();
+
                 if (rs.next()) {
-                    return BD_2.getRespFin(rs.getInt("id"));
+                    int ID = rs.getInt("id");
+                    ps.close();
+                    con.close();
+                    return BD_2.getRespFin(ID);
                 }
             }
         } catch (SQLException e) {
